@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oluwanifemi Soretire - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700;900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-900;
+        }
+        .section-title {
+            @apply text-3xl font-bold text-blue-700 mb-8 tracking-tight border-l-4 border-black pl-4;
+        }
+        .card {
+            @apply bg-white rounded-2xl shadow-xl p-8 transform transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl border border-gray-200;
+        }
+        .fade-in {
+            animation: fadeIn 1s ease-in-out;
+        }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .smooth-scroll {
+            scroll-behavior: smooth;
+        }
+        .header-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #111827 100%);
+        }
+        .divider {
+            @apply border-t border-gray-300 my-6;
+        }
+    </style>
+</head>
+<body class="smooth-scroll">
+    <!-- Header -->
+    <header class="header-gradient text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-5xl font-extrabold tracking-tight fade-in">Oluwanifemi Soretire</h1>
+            <p class="text-xl mt-3 font-light fade-in">Management Information Systems Student | Software Developer</p>
+            <div class="mt-6 flex justify-center space-x-6 text-lg font-medium fade-in">
+                <a href="mailto:oluwanifemi.soretire@example.com" class="hover:text-gray-300 transition-colors">oluwanifemi.soretire@example.com</a>
+                <span class="text-gray-400">|</span>
+                <a href="tel:+2348134186992" class="hover:text-gray-300 transition-colors">+234 813 418 6992</a>
+                <span class="text-gray-400">|</span>
+                <a href="https://linkedin.com/in/oluwanifemi-soretire" target="_blank" class="hover:text-gray-300 transition-colors">LinkedIn</a>
+                <span class="text-gray-400">|</span>
+                <a href="https://github.com/oluwanifemi-soretire" target="_blank" class="hover:text-gray-300 transition-colors">GitHub</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-6 py-16">
+        <!-- About Section -->
+        <section class="mb-16">
+            <h2 class="section-title fade-in">About Me</h2>
+            <div class="card fade-in">
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Dedicated Management Information Systems student at Covenant University, set to graduate in 2027. Passionate about harnessing technology to drive business innovation, with expertise in software development, data analytics, and system design. Proficient in creating scalable, user-centric solutions using modern tools and frameworks, with a commitment to excellence and collaboration.
+                </p>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="mb-16">
+            <h2 class="section-title fade-in">Education</h2>
+            <div class="card fade-in">
+                <h3 class="text-2xl font-semibold text-gray-800">Covenant University</h3>
+                <p class="text-gray-600 font-medium">B.Sc. Management Information Systems | Expected 2027</p>
+                <p class="mt-3 text-gray-700">Relevant Coursework: Database Systems, Web Development, Systems Analysis, Data Structures, Business Process Management</p>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section class="mb-16">
+            <h2 class="section-title fade-in">Experience</h2>
+            <div class="card fade-in">
+                <h3 class="text-2xl font-semibold text-gray-800">Robotics and Artificial Intelligence Nigeria</h3>
+                <p class="text-gray-600 font-medium">Intern | September 2023 – December 2023, July 2025 – Present</p>
+                <div class="divider"></div>
+                <ul class="list-disc ml-6 mt-3 space-y-3 text-gray-700">
+                    <li>Developed and maintained web applications using Python, Flask, and JavaScript to support AI-driven robotics projects.</li>
+                    <li>Collaborated with cross-functional teams to design and implement system features, enhancing project functionality.</li>
+                    <li>Optimized SQL database queries, achieving a 20% improvement in performance for data retrieval.</li>
+                    <li>Contributed to UI/UX design using Figma, creating intuitive interfaces for end-users.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="mb-16">
+            <h2 class="section-title fade-in">Projects</h2>
+            <div class="card fade-in">
+                <h3 class="text-2xl font-semibold text-gray-800">Estate Visitor Management System</h3>
+                <p class="text-gray-600 font-medium">Python, Flask, JavaScript, React, SQL | 2025</p>
+                <div class="divider"></div>
+                <ul class="list-disc ml-6 mt-3 space-y-3 text-gray-700">
+                    <li>Engineered a web application to streamline visitor access code generation and verification for estate residents.</li>
+                    <li>Implemented secure API endpoints for user authentication and code management using Flask and JWT.</li>
+                    <li>Developed a responsive React frontend with Tailwind CSS for a seamless, intuitive user experience.</li>
+                    <li>Integrated SQLite database for efficient storage and retrieval of visitor data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="mb-16">
+            <h2 class="section-title fade-in">Skills</h2>
+            <div class="card fade-in">
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-700">
+                    <li><span class="font-semibold">Technical:</span> Python, JavaScript, HTML/CSS, SQL, Flask, React, Git, Figma, Microsoft Azure, Data Analytics</li>
+                    <li><span class="font-semibold">Soft Skills:</span> Problem-Solving, Communication, Teamwork, Leadership, Time Management</li>
+                    <li><span class="font-semibold">Certifications:</span> Google IT Support Professional Certificate, Microsoft Azure Fundamentals (In Progress)</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Career Interests Section -->
+        <section class="mb-16">
+            <h2 class="section-title fade-in">Career Interests</h2>
+            <div class="card fade-in">
+                <p class="text-lg leading-relaxed text-gray-700">
+                    Aspiring to excel in roles that bridge technology and business, such as AI Business Analyst, Data Analyst, IT Project Manager, or AI Solutions Architect. Passionate about fintech and AI-driven solutions, targeting opportunities at innovative firms like Flutterwave, Microsoft Nigeria, and Andela Nigeria. Actively seeking internships in Victoria Island, Lagos, to apply expertise in software development, data analytics, and UI/UX design.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="fade-in text-gray-300">&copy; 2025 Oluwanifemi Soretire. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
